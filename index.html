@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        /* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth; /* Enable smooth scrolling behavior */
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#navbar li {
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffc107;
+}
+
+/* Main Content Styles */
+main {
+    padding-top: 80px; /* Adjust padding to avoid content being hidden under fixed header */
+}
+
+.movies {
+    padding: 40px 0;
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.movie {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 300px;
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.movie h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.movie p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+}
+
+    </style>
+    <header id="header">
+        <div class="container">
+            <h1>Movie Database</h1>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Movies</a></li>
+                    <li><a href="#" class="nav-link">Actors</a></li>
+                    <li><a href="#" class="nav-link">Directors</a></li>
+                    <li><a href="#" class="nav-link">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="movies">
+            <div class="container">
+                <h2>Featured Movies</h2>
+                <div class="movie-list">
+                    <div class="movie">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c618cd88432989.5dd5e72e505d1.jpg" alt="">
+                        <h3>Seven</h3>
+                        <p>Anoop Kumar</p>
+                       
+                        <p>Rating: 4.5/5</p>
+                    </div>
+                    <div class="movie">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEwgqMGqvEV28E52xk1BFD_-a4aeFKt4IPBd1v1zM8ZN0WUGD_TTPjLqeXmdKSS8nrpOI&usqp=CAU" alt="Movie 2">
+                        <h3>Bhramshtra</h3>
+                        <p>Sanja Leela bhansali</p>
+                        
+                        <p>Rating: 4.2/5</p>
+                    </div>
+                    <div class="movie">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwApJQQFNANRk6S34Te9eV3jzKp7GCDOB8bw&s" alt="Movie 2">
+                        <h3>Avatar</h3>
+                        <p>Jai Sharma/p>
+                        
+                        <p>Rating: 5/5</p>
+                    </div>
+                    <div class="movie">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLP_JKbiyspuowCDb5ctjbNmtkHvfIbQGzTQ&s" alt="Movie 2">
+                        <h3>War</h3>
+                        <p>Pali devi</p>
+        
+                        <p>Rating: 4.2/5</p>
+                    </div>
+                    <div class="movie">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUsPEwfABK1Xzf816_SGK8dCzZFiiLKmvtL5YWMMqoqROJLK0ROV9wXj-UNE52aRqcJiw&usqp=CAU" alt="Movie 2">
+                        <h3>Dil se utar gye</h3>
+                        <p>Kavita Bajpeyi</p>
+                
+                        <p>Rating: 4.3/5</p>
+                    </div>
+                    <div class="movie">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQISS0hl2L8beyRU_1kEYhp11Zv4fk06moQBcFUtYxWxeCPrEc8DRt_wBTP-O9-eECvRl4&usqp=CAU" alt="Movie 2">
+                        <h3>Love</h3>
+                        <p>Abhishek kumar</p>
+                        <p>Starring: Actor 1, Actor 2, Actor 3</p>
+                        <p>Rating: 4/5</p>
+                    </div>
+          
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Movie Database. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // script.js
+
+// Change navigation menu style on scroll
+window.addEventListener('scroll', function() {
+    var header = document.getElementById('header');
+    if (window.scrollY > 0) {
+        header.style.backgroundColor = '#555'; // Change background color on scroll
+    } else {
+        header.style.backgroundColor = '#333'; // Revert to original color
+    }
+});
+
+// Smooth scroll behavior for menu links
+document.querySelectorAll('.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        var targetId = this.getAttribute('href').substring(1); // Get target section id
+        var targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
